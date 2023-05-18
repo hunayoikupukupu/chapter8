@@ -1,0 +1,67 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+.list {
+  width: 100%;
+  margin-top: 50px;
+  display: flex; /* Flexboxの利用 */
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.list-box {
+  width: 960px;
+  height: 60px;
+}
+
+.list-box:nth-child(odd) {
+  background-color: silver;
+}
+
+.list-box:nth-child(even) {
+  background-color: white;
+}
+
+.list-text {
+  text-align: left;
+  padding: 20px 20px;
+  color: gray;
+}
+
+main {
+  width: 960px;
+  display: flex; /* Flexboxの利用 */
+  justify-content: center;
+  margin: 0 auto; /* 要素の中央揃え */
+  margin-bottom: 50px;
+}
+
+.big-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.little-box {
+  width: 288px;
+  height: 200px;
+  background-color: yellow;
+  margin-right: 48px;
+  margin-bottom: 40px;
+}
+
+.little-box:nth-child(1),.little-box:nth-child(5),.little-box:nth-child(9) {
+  background-color: orange;
+}
+
+.little-box:nth-child(3n) {
+  margin-right: 0;
+}
+
+.little-box:nth-child(7),.little-box:nth-child(8),.little-box:nth-child(9) {
+  margin-bottom: 0;
+}
